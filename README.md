@@ -1,2 +1,1 @@
-# rsr
 Nothing.
