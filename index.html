@@ -140,6 +140,11 @@
       Telegram.WebApp.ready();
       Telegram.WebApp.expand();
     }
+    Telegram.WebApp.onEvent("themeChanged", () => {
+        const theme = Telegram.WebApp.themeParams;
+        Telegram.WebApp.setBackgroundColor(theme.secondary_bg_color || "#3498db");
+    });
+
   </script>
   <script src="./service-worker.js" charset="utf-8" async></script>
 </html>
